@@ -1,20 +1,364 @@
-<html>
-<head>
-  <title>目录</title>
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-</head>
-<body>
-<h1>目录</h1>
-<ul>
-<li><a href="webpack环境所需依赖.html">webpack环境所需依赖</a></li>
-<li><a href="react基本概念.html">react基本概念</a></li>
-<li><a href="react的使用.html">react的使用</a></li>
-<li><a href="react组件通信.html">react组件通信</a></li>
-<li><a href="react脚手架的使用.html">react脚手架的使用</a></li>
-<li><a href="react生命周期.html">react生命周期</a></li>
-<li><a href="react路由.html">react路由</a></li>
-<li><a href="redux.html">redux</a></li>
-<li><a href="项目启动.html">项目启动</a></li>
-</ul>
+
+<!DOCTYPE html>
+<html  xmlns:wb="http://open.weibo.com/wb">
+	<head>
+				<meta charset="utf-8">
+		<meta name="data-spm" content="a2obv">
+		<title>首页 - 阿里巴巴集团招聘</title>
+		<link rel="shortcut icon" type="image/x-icon" href="https://i.alipayobjects.com/i/localhost/ico/201404/2WPSMmbEyj.ico"/>
+		<link rel="stylesheet" type="text/css" href="//job.alibaba.com/assets/zhaopin/css/comment.css?v=201808311750" />
+		<link rel="stylesheet" type="text/css" href="//job.alibaba.com/assets/zhaopin/css/pob-box.css?v=201808311750" />
+		<script type="text/javascript" src="//job.alibaba.com/assets/zhaopin/js/lib/sea.js?v=201808311750"></script>
+        <script type="text/javascript" src="//job.alibaba.com/assets/zhaopin/js/config.js?v=201808311750"></script>
+        <script type="text/javascript" src="//alinw.alicdn.com/secdev/pointman/js/index.js?t=201501082043" app="alinw"></script>
+		<!-- <style>
+			.head {background-color: #2C2F33;}
+			.head .head-main{ overflow: hidden; }
+			.head, .head .head-menu li.back, .head .logo {height: 52px;}
+			.head .logo {height: 20px;margin-top: 16px; float: left;}
+			.head .head-menu li a, .head .login {line-height: 52px;}
+			.head .head-menu {width: 703px;}
+			.head .login {width: 340px;}
+			.head .head-menu .current-cat a {color: #F37327}
+			#menu li a:hover {color: #F37327}
+		</style> -->
+    </head>
+<body data-spm="11410899"><script async src="//g.alicdn.com/platform/common/s/1.1/monitor/index.js" id="tb-beacon-aplus" exparams=""></script>
+	    <style>
+  #global-recruit-ads{
+    padding: 5px;
+    text-align: center;
+    color: #666;
+    background: #FDFECE;
+    border-bottom: 1px solid #ccc;
+  }
+</style>
+
+<div id="global-recruit-ads" style="display:none;"></div>
+
+	<!-- head:S -->
+	<div class="head">
+		<div class="head-main">
+			<div class="head-menu">
+				<a href="https://job.alibaba.com/zhaopin/index.htm" class="logo" style="text-align:right;width: 125px;" ><img src="https://img.alicdn.com/tfs/TB1Zv8_lxSYBuNjSspjXXX73VXa-390-63.png" height="20" alt=""></a>
+				<i style="float:left;color:white;font-style:normal;font-size:20px;line-height:52px;margin: 0 10px;opacity: 0.8;">|</i>
+				<i style="float:left;color:white;font-style:normal;font-size:14px;line-height:54px;opacity: 0.8;">社招官网</i>
+				<ul class="" id="menu">
+					<li class="current current-cat" value="1"><a href="https://job.alibaba.com/zhaopin/index.htm">首 &nbsp;&nbsp;页</a></li>
+					<!-- <li class="line"></li> -->
+					<li><a href="https://job.alibaba.com/zhaopin/positionList.htm">社会招聘</a></li>
+					<!-- <li class="line"></li> -->
+					<li><a href="https://campus.alibaba.com" target="blank">校园招聘</a></li>
+					<li ><a href="https://job.alibaba.com/zhaopin/about.htm">了解阿里</a></li>
+					<!-- <li class="line"></li> -->
+					<li ><a href="https://job.alibaba.com/zhaopin/apply.htm">个人中心</a></li>
+					<!-- <li class="back" id="slide"></li> -->
+					<div class="login" style="opacity: 0.8;">
+						欢迎来到阿里巴巴集团招聘！
+																					<a href='https://passport.alibaba.com/login.htm?appName=hrjob&params=https%3A%2F%2Fjob.alibaba.com%2F%2Fzhaopin%2Findex.htm%3Fspm%3Da2obv.11410903.0.0.322944f667txHW' target="_top">登录</a>
+																	| <a href="http://member1.taobao.com/member/newbie.htm">注册</a>
+											</div>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- head:E -->
+	<style>
+/* body{ padding-bottom: 44px;} */
+.search-topic {
+	color: rgba(31,56,88,0.30);
+	line-height: 20px;
+	margin-left: 8px;
+}
+.hot-text, .hot-text a {
+	color: rgba(255,255,255,0.80);
+}
+.hot-text a:hover {
+	color: #F37327;
+}
+.newPosition-list {
+	background: #FFFFFF;
+	box-shadow: 0 0 15px 0 rgba(31,56,88,0.08);
+	border-radius: 3px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+.newPosition-list .position-list {
+	position: absolute;
+	z-index: 1;
+	top: 50px;
+	width: 100%;
+}
+.newPosition-list .position-list li {
+	overflow: hidden;
+	padding: 0 14px;
+	line-height: 50px;
+}
+.newPosition-list .position-list li .position {
+	float: left;
+	color: #3C99D8;
+	cursor: pointer;
+	font-size: 14px;
+	width: 400px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.newPosition-list .position-list li .time {
+	font-style: normal;
+	float: right;
+	width: 70px;
+	text-align: right;
+	font-size: 14px;
+	color: rgba(31,56,88,0.60);
+} 
+.newPosition-list .position-list li .city {
+	float: right;
+	font-style: normal;
+	font-size: 14px;
+	color: rgba(0,0,0,0.60);
+	margin-right: 70px;
+	width: 202px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+} 
+.more-positon {
+	height: 49px;
+	border-bottom: 1px solid rgba(31,56,88,0.06);
+	line-height: 49px;
+	padding: 0 14px;
+	/* opacity: 0.8; */
+	background: white;
+	font-size: 14px;
+	color: #000000;
+	position: relative;
+	z-index: 2;
+}
+.show-pic {
+	display: block;
+	cursor: pointer;
+	height: 140px;
+	background: #FFFFFF;
+	box-shadow: 0 0 15px 0 rgba(31,56,88,0.08);
+	border-radius: 3px;
+}
+.pic-1 {
+	margin-bottom: 20px;
+}
+.more-positon a {
+	float: right;
+	font-size: 14px;
+	color: rgba(31,56,88,0.60);
+	cursor: pointer;
+	text-decoration: none;
+}
+</style>
+<script crossorigin="anonymous">
+var buBannerData = [
+  
+      {
+        imgUrl:"https://img.alicdn.com/tfs/TB1SbxarYj1gK0jSZFOXXc7GpXa-2546-848.png",
+        link:"https://www.aliyun.com/careers",
+        buName:"阿里云",
+      },
+  
+      {
+        imgUrl:"https://img.alicdn.com/tfs/TB18tFCCH2pK1RjSZFsXXaNlXXa-240-34.svg",
+        link:"https://job.alibaba.com/zhaopin/informationPlatformBu.htm",
+        buName:"企业智能",
+      },
+  
+];
+</script><!-- head:E -->
+<div class="index-main" id="J-index-main" style="position:relative;height:478px;">
+	<img class="index-image" src="https://img.alicdn.com/tfs/TB14TEEm7CWBuNjy0FaXXXUlXXa-1440-478.png" style="vertical-align: middle;width:100%;" alt="">
+	<div style="position: absolute;top:0;left:0;width: 100%;height: 100%;background: rgba(31,56,88,0.40);"></div>
+	<div class="index-mid-box" style="height:100%;">
+		<form class="J-search-form">
+			<div class="float-mid" style="top: 50%;margin-left: -245px;margin-top: -145px;">
+				<p style="font-size: 54px;color: #fff;line-height: 56px;" class="en-world">If not now, when?</p>
+				<p style="font-size: 54px;color: #fff;line-height: 56px;" class="en-world">If not me, who?</p>
+				<p style="font-size: 34px;color: #fff;margin-bottom:38px;line-height: 48px;">此时此刻，非我莫属！</p>
+				<div class="search-box" style="width:490px;height:60px;position: relative;border:0px;background:none;margin:0 auto;">
+					<div style="width:100%;height:100%;background:#fff;position:absolute;opacity: 0.1; filter:alpha(opacity=10);"></div>
+					<input type="text" maxlength="30" topic="请输入职位关键词" style="width:368px;height:40px;padding-top: 6px;margin-top:6px;margin-left:10px;;box-sizing: border-box;border-radius:3px;" class="search-text" />
+					<input class="search-btn" data-spm-click="gostr=/hr;locaid=searchPosition" type="submit" style="color:#fff;background:#F37327;font-size:14px;font-family:PingFangSC-Regular;width: 92px;height: 40px;border-radius:3px;margin-top:10px;margin-left:10px;position: relative;z-index:2;" value="搜索" />
+				</div>
+				<div class="hot-text" style="text-align:center;">
+										热门搜索：
+											<a class="search-key" href="javascript:void()" data-spm-click="gostr=/hr;locaid=hotPosition" >JAVA</a>
+											<a class="search-key" href="javascript:void()" data-spm-click="gostr=/hr;locaid=hotPosition" >IOS</a>
+											<a class="search-key" href="javascript:void()" data-spm-click="gostr=/hr;locaid=hotPosition" >数据</a>
+											<a class="search-key" href="javascript:void()" data-spm-click="gostr=/hr;locaid=hotPosition" >安全</a>
+											<a class="search-key" href="javascript:void()" data-spm-click="gostr=/hr;locaid=hotPosition" >搜索</a>
+											<a class="search-key" href="javascript:void()" data-spm-click="gostr=/hr;locaid=hotPosition" >算法</a>
+											<a class="search-key" href="javascript:void()" data-spm-click="gostr=/hr;locaid=hotPosition" >运营</a>
+											<a class="search-key" href="javascript:void()" data-spm-click="gostr=/hr;locaid=hotPosition" >视觉</a>
+											<a class="search-key" href="javascript:void()" data-spm-click="gostr=/hr;locaid=hotPosition" >交互</a>
+											<a class="search-key" href="javascript:void()" data-spm-click="gostr=/hr;locaid=hotPosition" >前端</a>
+														</div>
+			</div>
+		</form>
+	</div>
+</div>
+<div style="height:364px;width:100%; overflow: hidden;" class="newPosition">
+	<div class="newPosition-content" style="width:1180px;height:300px;margin:32px auto;">
+		<div class="newPosition-list" style="width:850px;height:300px;">
+			<div class="more-positon">
+				最新职位
+				<a class="clickMorePosition" data-spm-click="gostr=/hr;locaid=newPositionMore">更多</a>
+			</div>
+			<ul class="position-list">
+														<li class="scroll-1">
+						<a data-xux-log="text=首页推荐职位" href="https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP611239" class="position" data-spm-click="gostr=/hr;locaid=newPositionLink">蚂蚁集团-营销运营专家-支付宝</a>
+						<em class="time">34分钟前</em>
+						<em class="city" title="杭州">杭州</em>
+					</li>
+										<li class="scroll-1">
+						<a data-xux-log="text=首页推荐职位" href="https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP610453" class="position" data-spm-click="gostr=/hr;locaid=newPositionLink">蚂蚁集团-推荐产品专家-支付宝</a>
+						<em class="time">34分钟前</em>
+						<em class="city" title="杭州">杭州</em>
+					</li>
+										<li class="scroll-1">
+						<a data-xux-log="text=首页推荐职位" href="https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP610454" class="position" data-spm-click="gostr=/hr;locaid=newPositionLink">蚂蚁集团-供给平台产品专家-支付宝</a>
+						<em class="time">34分钟前</em>
+						<em class="city" title="杭州">杭州</em>
+					</li>
+										<li class="scroll-1">
+						<a data-xux-log="text=首页推荐职位" href="https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP611136" class="position" data-spm-click="gostr=/hr;locaid=newPositionLink">蚂蚁集团-首页产品专家-支付宝</a>
+						<em class="time">34分钟前</em>
+						<em class="city" title="杭州">杭州</em>
+					</li>
+										<li class="scroll-1">
+						<a data-xux-log="text=首页推荐职位" href="https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP611319" class="position" data-spm-click="gostr=/hr;locaid=newPositionLink">蚂蚁集团-端平台产品经理（偏业务）-支付宝</a>
+						<em class="time">34分钟前</em>
+						<em class="city" title="杭州">杭州</em>
+					</li>
+										<li class="scroll-1">
+						<a data-xux-log="text=首页推荐职位" href="https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP610841" class="position" data-spm-click="gostr=/hr;locaid=newPositionLink">蚂蚁集团-用户增长产品专家-支付宝</a>
+						<em class="time">34分钟前</em>
+						<em class="city" title="杭州">杭州</em>
+					</li>
+										<li class="scroll-1">
+						<a data-xux-log="text=首页推荐职位" href="https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP610456" class="position" data-spm-click="gostr=/hr;locaid=newPositionLink">蚂蚁集团-高级产品专家（家庭业务方向）-支付宝</a>
+						<em class="time">34分钟前</em>
+						<em class="city" title="杭州">杭州</em>
+					</li>
+										<li class="scroll-1">
+						<a data-xux-log="text=首页推荐职位" href="https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP611048" class="position" data-spm-click="gostr=/hr;locaid=newPositionLink">蚂蚁集团-运营专家（家庭业务方向）-支付宝</a>
+						<em class="time">34分钟前</em>
+						<em class="city" title="杭州">杭州</em>
+					</li>
+										<li class="scroll-1">
+						<a data-xux-log="text=首页推荐职位" href="https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP065322" class="position" data-spm-click="gostr=/hr;locaid=newPositionLink">菜鸟-进口供应链运营专家</a>
+						<em class="time">44分钟前</em>
+						<em class="city" title="杭州">杭州</em>
+					</li>
+										<li class="scroll-1">
+						<a data-xux-log="text=首页推荐职位" href="https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP611047" class="position" data-spm-click="gostr=/hr;locaid=newPositionLink">蚂蚁集团-用户产品专家/高级专家-支付宝</a>
+						<em class="time">44分钟前</em>
+						<em class="city" title="杭州">杭州</em>
+					</li>
+										<li class="scroll-1">
+						<a data-xux-log="text=首页推荐职位" href="https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP610737" class="position" data-spm-click="gostr=/hr;locaid=newPositionLink">蚂蚁集团-用户产品专家/高级专家-平台化方向-支付宝</a>
+						<em class="time">44分钟前</em>
+						<em class="city" title="杭州">杭州</em>
+					</li>
+										<li class="scroll-1">
+						<a data-xux-log="text=首页推荐职位" href="https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP610738" class="position" data-spm-click="gostr=/hr;locaid=newPositionLink">蚂蚁集团-用户产品高级专家-会员产品-支付宝</a>
+						<em class="time">44分钟前</em>
+						<em class="city" title="杭州">杭州</em>
+					</li>
+										<li class="scroll-1">
+						<a data-xux-log="text=首页推荐职位" href="https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP610455" class="position" data-spm-click="gostr=/hr;locaid=newPositionLink">蚂蚁集团-策略产品高级专家-支付宝</a>
+						<em class="time">44分钟前</em>
+						<em class="city" title="杭州">杭州</em>
+					</li>
+										<li class="scroll-1">
+						<a data-xux-log="text=首页推荐职位" href="https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP610656" class="position" data-spm-click="gostr=/hr;locaid=newPositionLink">蚂蚁集团-策略产品专家-支付宝</a>
+						<em class="time">44分钟前</em>
+						<em class="city" title="杭州">杭州</em>
+					</li>
+										<li class="scroll-1">
+						<a data-xux-log="text=首页推荐职位" href="https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP611240" class="position" data-spm-click="gostr=/hr;locaid=newPositionLink">蚂蚁集团-评价规则产品专家-支付宝</a>
+						<em class="time">54分钟前</em>
+						<em class="city" title="杭州">杭州</em>
+					</li>
+										<li class="scroll-1">
+						<a data-xux-log="text=首页推荐职位" href="https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP610655" class="position" data-spm-click="gostr=/hr;locaid=newPositionLink">蚂蚁集团-用户产品高级专家-卡包负责人-支付宝</a>
+						<em class="time">54分钟前</em>
+						<em class="city" title="杭州">杭州</em>
+					</li>
+										<li class="scroll-1">
+						<a data-xux-log="text=首页推荐职位" href="https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP611137" class="position" data-spm-click="gostr=/hr;locaid=newPositionLink">蚂蚁集团-用户产品专家/高级专家-智能产品方向-支付宝</a>
+						<em class="time">54分钟前</em>
+						<em class="city" title="杭州">杭州</em>
+					</li>
+										<li class="scroll-1">
+						<a data-xux-log="text=首页推荐职位" href="https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP611135" class="position" data-spm-click="gostr=/hr;locaid=newPositionLink">蚂蚁集团-高级服务商家运营专家-支付宝</a>
+						<em class="time">1小时前</em>
+						<em class="city" title="杭州">杭州</em>
+					</li>
+										<li class="scroll-1">
+						<a data-xux-log="text=首页推荐职位" href="https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP611317" class="position" data-spm-click="gostr=/hr;locaid=newPositionLink">蚂蚁集团-高级搜索产品专家-支付宝</a>
+						<em class="time">1小时前</em>
+						<em class="city" title="杭州">杭州</em>
+					</li>
+										<li class="scroll-1">
+						<a data-xux-log="text=首页推荐职位" href="https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP611238" class="position" data-spm-click="gostr=/hr;locaid=newPositionLink">蚂蚁集团-搜索产品专家-支付宝</a>
+						<em class="time">1小时前</em>
+						<em class="city" title="杭州">杭州</em>
+					</li>
+												</ul>
+		</div>
+		<div style="width:310px;float:right">
+			<a class="show-pic pic-1 jumpToAliyun" href="" data-spm-click="gostr=/hr;locaid=aliyun" style="text-align:center;line-height:140px;">
+				
+			</a>
+			<a class="show-pic pic-2 jumpToEhr" href="informationPlatformBu.htm" data-spm-click="gostr=/hr;locaid=xinxipingtai" style="text-align:center;line-height:140px;"></a>
+		</div>
+	</div>
+</div>
+<div class="index-footer">
+	<div class="footer-content" style="text-align: center">
+		阿里巴巴集团 Copyright ©1999-2020 版权所有
+	</div>
+</div>
+<script type="text/javascript">
+	seajs.use("app/index");
+	seajs.use("app/login.mesg");
+</script>
+	
 </body>
+<script>
+	if (window.location.href.indexOf('acjoinus') >= 0) {
+		var acjoinusValue = window.location.href.split('acjoinus=')[1];
+		acjoinusValue = acjoinusValue && acjoinusValue.split('&')[0];
+		var menuModule = document.getElementById('menu');
+		var menuLinks = menuModule.getElementsByTagName('a');
+		if (document.getElementById('J-login')) {
+			var J_login = document.getElementById('J-login');
+			var J_loginLinks = J_login.getElementsByTagName('a');
+			addLinkParam(J_loginLinks);
+		}
+		addLinkParam(menuLinks);
+		addLinkParam(document.getElementsByClassName('logo'));
+		function addLinkParam(arr) {
+			var newArr = arr ? (arr.length >= 0 ? arr : []) : [];
+			for(var i=0,item; item=newArr[i++];) {
+				var link = item.getAttribute('href');
+				if(link.indexOf('?') >= 0) {
+					link += '&acjoinus=' + acjoinusValue;
+				}else {
+					link += '?acjoinus=' + acjoinusValue;
+				}
+				item.setAttribute('href', link);
+			}
+		}
+	}
+</script>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cdiv id='cnzz_stat_icon_1000004769'%3E%3C/div%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/q_stat.php%3Fid%3D1000004769' type='text/javascript'%3E%3C/script%3E"));</script>
 </html>
